@@ -1,0 +1,522 @@
+<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]--> <!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ichi.moe - Japanese transliteration and dictionary service</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="/favicon.ico?v=2" />
+	<link rel="stylesheet" href="/css/foundation.min.css" />
+	<link rel="stylesheet" href="/css/jquery.jscrollpane.css" />
+	<link rel="stylesheet" href="/css/ichiran.css?v=3850663369" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script
+		type=\'text/javascript\'> window.Modernizr || document.write(\'<script src="/js/vendor/modernizr.js"><\\/script>\'); </script>
+</head>
+
+<body>
+	<!--[if lt IE 7]> <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p> <![endif]-->
+	<div class="wrapper">
+		<div class="header">
+			<div class="row">
+				<div class="text-center"> <img src="/img/ichiran-logo-placeholder.png" alt="ichi.moe banner"> </div>
+			</div>
+			<div class="row header-outer">
+				<div class="small-12 medium-10 large-8 medium-centered columns">
+					<div class="row collapse header-nav">
+						<div class="small-3 columns"><a href="/">Home</a></div>
+						<div class="small-3 columns"><a href="/how.html"><span class="nowrap">How to use</span></a></div>
+						<div class="small-3 columns"><a href="/faq.html">FAQ</a></div>
+						<div class="small-3 columns"><a href="/contact.html">Contact</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="row header-nav header-sub">
+				<div class="small-12 text-center columns"> <b>NEW!</b> Tools: <a href="/cl/kanji/">KanjiInfo</a> | <a
+						href="/cl/word/">WordInfo</a> </div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="div-ichiran-form">
+				<form id="r-form" action="/cl/qr/" method="GET">
+					<div class="row collapse">
+						<div class="small-8 medium-10 columns"> <input id="ichiran-text-field" lang="ja" type="text"
+								placeholder="Put Japanese sentence here" name="q"> </div>
+						<div class="small-2 medium-1 columns"> <input class="button postfix" type="submit" value="Submit" /> </div>
+						<div class="small-2 medium-1 columns"> <input id="btn-r-opts" class="button postfix" type="button"
+								data-dropdown="r-opts-dropdown" aria-controls="r-opts-dropdown" aria-expanded="false"
+								data-options="align:left" value="Options" /> </div>
+					</div>
+					<div id="r-opts-dropdown" data-dropdown-content class="f-dropdown content small" aria-hidden="true"
+						tabindex="-1">
+						<div class="row"> <label>Romanization method <select id="select-rom-method" name="r">
+									<option value="kana">Kana</option>
+									<option value="hb">Hepburn (basic)</option>
+									<option value="htr" selected>Hepburn (traditional)</option>
+									<option value="hm">Hepburn (modified)</option>
+									<option value="ks">Kunreisiki</option>
+								</select> </label> </div>
+						<div class="row"> <input id="chk-hiragana" name="hira" type="checkbox"> <label for="chk-hiragana">Convert
+								katakana to hiragana</label> </div>
+						<div class="row"> <input id="chk-no-segmentation" name="noseg" type="checkbox"> <label
+								for="chk-no-segmentation">No segmentation (kana only)</label> </div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div id="div-ichiran-result" lang="ja">
+				<h2 class="query-text-full"> <span class="query-text query-word" data-dropdown="query-picker-0"
+						aria-controls="query-picker-0" aria-expanded="false"
+						data-part="0">\xe7\xa7\x81\xe3\x81\xaf\xe6\x97\xa5\xe6\x9c\xac\xe8\xaa\x9e\xe3\x82\x92\xe5\x8b\x89\xe5\xbc\xb7\xe3\x81\x97\xe3\x81\xa6\xe3\x81\x84\xe3\x81\xbe\xe3\x81\x99</span><span
+						class="query-text query-misc" data-part="1">\xe3\x80\x82</span> </h2>
+				<ul id="query-picker-0" class="f-dropdown query-dropdown medium" data-part="0" data-dropdown-content
+					aria-hidden="true" tabindex="-1"> </ul>
+				<p><em> <span class="ds-text" data-part="0" data-pick="0" data-score="3383"><span class="ds-word" data-word="0"
+								data-start="0" data-end="1">watashi</span> <span class="ds-word" data-word="1" data-start="1"
+								data-end="2">wa</span> <span class="ds-word" data-word="2" data-start="2" data-end="5">nihongo</span>
+							<span class="ds-word" data-word="3" data-start="5" data-end="6">wo</span> <span class="ds-word"
+								data-word="4" data-start="6" data-end="13">benky\xc5\x8d shiteimasu</span></span><span
+							class="ds-text hidden" data-part="0" data-pick="1" data-score="3369"><span class="ds-word" data-word="0"
+								data-start="0" data-end="1">watashi</span> <span class="ds-word" data-word="1" data-start="1"
+								data-end="2">wa</span> <span class="ds-word" data-word="2" data-start="2" data-end="5">nihongo</span>
+							<span class="ds-word" data-word="3" data-start="5" data-end="6">wo</span> <span class="ds-word"
+								data-word="4" data-start="6" data-end="13">benky\xc5\x8d shiteimasu</span></span><span
+							class="ds-text hidden" data-part="0" data-pick="2" data-score="3369"><span class="ds-word" data-word="0"
+								data-start="0" data-end="1">watashi</span> <span class="ds-word" data-word="1" data-start="1"
+								data-end="2">wa</span> <span class="ds-word" data-word="2" data-start="2" data-end="5">nihongo</span>
+							<span class="ds-word" data-word="3" data-start="5" data-end="6">wo</span> <span class="ds-word"
+								data-word="4" data-start="6" data-end="13">benky\xc5\x8d shiteimasu</span></span><span
+							class="ds-text hidden" data-part="0" data-pick="3" data-score="3355"><span class="ds-word" data-word="0"
+								data-start="0" data-end="1">watashi</span> <span class="ds-word" data-word="1" data-start="1"
+								data-end="2">wa</span> <span class="ds-word" data-word="2" data-start="2" data-end="5">nihongo</span>
+							<span class="ds-word" data-word="3" data-start="5" data-end="6">wo</span> <span class="ds-word"
+								data-word="4" data-start="6" data-end="13">benky\xc5\x8d shiteimasu</span></span><span
+							class="ds-text hidden" data-part="0" data-pick="4" data-score="2858"><span class="ds-word" data-word="0"
+								data-start="0" data-end="1">watashi</span> <span class="ds-word" data-word="1" data-start="1"
+								data-end="2">wa</span> <span class="ds-word" data-word="2" data-start="2" data-end="5">nihongo</span>
+							<span class="ds-word" data-word="3" data-start="5" data-end="6">wo</span> <span class="ds-word"
+								data-word="4" data-start="6" data-end="13">benky\xc5\x8d shiteimasu</span></span><span
+							class="normal-text" data-part="1">. </span></em></p>
+			</div>
+		</div>
+		<div class="gloss-all" lang="ja">
+			<div class="row gloss-row" data-part="0" data-pick="0">
+				<ul class="large-block-grid-4 small-block-grid-1 medium-block-grid-3">
+					<li>
+						<div class="gloss" id="g-0-0-0" data-word="0">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E7%A7%81"> <em>watashi</em> </a>
+								<div class="word-link-container"> <a class="wiktionary-link" title="Look up this kanji in Wiktionary"
+										target="_blank" href="https://en.wiktionary.org/wiki/%E7%A7%81#Kanji"> W </a> </div>
+							</div>
+							<div class="gloss-content scroll-pane">
+								<dl class="alternatives">
+									<dt>\xe7\xa7\x81 \xe3\x80\x90\xe3\x82\x8f\xe3\x81\x9f\xe3\x81\x97\xe3\x80\x91</dt>
+									<dd>
+										<ol class="gloss-definitions">
+											<li> <span class="pos-desc">[pn]</span> <span class="sense-info-note has-tip tip-top" data-tooltip
+													aria-haspopup="true" title="slightly formal or feminine">note</span> <span
+													class="gloss-desc">I; me</span> </li>
+										</ol>
+									</dd>
+								</dl> <span class="note-skipped"> <a href="/cl/word/?q=%E7%A7%81" target="_blank">omitted: 9</a> </span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="gloss" id="g-0-0-1" data-word="1">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E3%81%AF"> <em>wa</em> </a> </div>
+							<div class="gloss-content scroll-pane">
+								<dl class="alternatives">
+									<dt>\xe3\x81\xaf</dt>
+									<dd>
+										<ol class="gloss-definitions">
+											<li> <span class="pos-desc">[prt]</span> <span class="sense-info-note has-tip tip-top"
+													data-tooltip aria-haspopup="true"
+													title="pronounced \xe3\x82\x8f in modern Japanese">note</span> <span
+													class="gloss-desc">indicates sentence topic</span> </li>
+											<li> <span class="pos-desc">[prt]</span> <span class="gloss-desc">indicates contrast with another
+													option (stated or unstated)</span> </li>
+											<li> <span class="pos-desc">[prt]</span> <span class="gloss-desc">adds emphasis</span> </li>
+										</ol>
+									</dd>
+								</dl> <span class="note-skipped"> <a href="/cl/word/?q=%E3%81%AF" target="_blank">omitted: 10</a>
+								</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="gloss" id="g-0-0-2" data-word="2">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E6%97%A5%E6%9C%AC%E8%AA%9E"> <em>nihongo</em> </a> </div>
+							<div class="gloss-content scroll-pane">
+								<dl class="alternatives">
+									<dt>\xe6\x97\xa5\xe6\x9c\xac\xe8\xaa\x9e
+										\xe3\x80\x90\xe3\x81\xab\xe3\x81\xbb\xe3\x82\x93\xe3\x81\x94\xe3\x80\x91</dt>
+									<dd>
+										<ol class="gloss-definitions">
+											<li> <span class="pos-desc">[n]</span> <span class="gloss-desc">Japanese (language)</span> </li>
+										</ol>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="gloss" id="g-0-0-3" data-word="3">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E3%82%92"> <em>wo</em> </a> </div>
+							<div class="gloss-content scroll-pane">
+								<dl class="alternatives">
+									<dt>\xe3\x82\x92</dt>
+									<dd>
+										<ol class="gloss-definitions">
+											<li> <span class="pos-desc">[prt]</span> <span class="gloss-desc">indicates direct object of
+													action</span> </li>
+											<li> <span class="pos-desc">[prt]</span> <span class="gloss-desc">indicates subject of causative
+													expression</span> </li>
+											<li> <span class="pos-desc">[prt]</span> <span class="gloss-desc">indicates an area
+													traversed</span> </li>
+											<li> <span class="pos-desc">[prt]</span> <span class="gloss-desc">indicates time (period) over
+													which action takes place</span> </li>
+											<li> <span class="pos-desc">[prt]</span> <span class="gloss-desc">indicates point of departure or
+													separation of action</span> </li>
+											<li> <span class="pos-desc">[prt]</span> <span class="gloss-desc">indicates object of desire,
+													like, hate, etc.</span> </li>
+										</ol>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="gloss" id="g-0-0-4" data-word="4">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E5%8B%89%E5%BC%B7%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99"> <em>benky\xc5\x8d
+										shiteimasu</em> </a> </div>
+							<div class="gloss-content scroll-pane">
+								<dl class="alternatives">
+									<dt>\xe5\x8b\x89\xe5\xbc\xb7\xe3\x81\x97\xe3\x81\xa6\xe3\x81\x84\xe3\x81\xbe\xe3\x81\x99
+										\xe3\x80\x90\xe3\x81\xb9\xe3\x82\x93\xe3\x81\x8d\xe3\x82\x87\xe3\x81\x86
+										\xe3\x81\x97\xe3\x81\xa6\xe3\x81\x84\xe3\x81\xbe\xe3\x81\x99\xe3\x80\x91</dt>
+									<dd> <span class="compound-desc">Compound word: <span class="compound-desc-word">
+												\xe5\x8b\x89\xe5\xbc\xb7 + \xe3\x81\x97\xe3\x81\xa6 + \xe3\x81\x84\xe3\x81\xbe\xe3\x81\x99
+											</span> </span>
+										<dl class="compounds">
+											<dt>\xe5\x8b\x89\xe5\xbc\xb7
+												\xe3\x80\x90\xe3\x81\xb9\xe3\x82\x93\xe3\x81\x8d\xe3\x82\x87\xe3\x81\x86\xe3\x80\x91</dt>
+											<dd>
+												<ol class="gloss-definitions">
+													<li> <span class="pos-desc">[n,vs,vt]</span> <span class="gloss-desc">study</span> </li>
+													<li> <span class="pos-desc">[n,vs,vi]</span> <span class="gloss-desc">diligence; working
+															hard</span> </li>
+													<li> <span class="pos-desc">[n]</span> <span class="gloss-desc">experience; lesson (for the
+															future)</span> </li>
+													<li> <span class="pos-desc">[vi,vt,vs,n]</span> <span class="gloss-desc">discount; price
+															reduction</span> </li>
+												</ol>
+											</dd>
+											<dt>\xe3\x81\x97\xe3\x81\xa6</dt>
+											<dd> <span class="suffix-desc">[makes a verb from a noun]</span>
+												<div class="conjugations">
+													<div class="conjugation">
+														<div class="conj-prop"> <span class="pos-desc">[vs-i]</span> <span
+																class="conj-type">Conjunctive (~te)</span> </div>
+														<div class="conj-gloss">
+															<dl>
+																<dt>\xe7\x82\xba\xe3\x82\x8b \xe3\x80\x90\xe3\x81\x99\xe3\x82\x8b\xe3\x80\x91</dt>
+																<dd> </dd>
+															</dl>
+														</div>
+													</div>
+												</div>
+											</dd>
+											<dt>\xe3\x81\x84\xe3\x81\xbe\xe3\x81\x99</dt>
+											<dd> <span class="suffix-desc">[indicates continuing action (to be ...ing)]</span>
+												<div class="conjugations">
+													<div class="conjugation">
+														<div class="conj-prop"> <span class="pos-desc">[v1]</span> <span
+																class="conj-type">Non-past</span> <span class="conj-formal">Formal</span> </div>
+														<div class="conj-gloss">
+															<dl>
+																<dt>\xe5\xb1\x85\xe3\x82\x8b \xe3\x80\x90\xe3\x81\x84\xe3\x82\x8b\xe3\x80\x91</dt>
+																<dd> </dd>
+															</dl>
+														</div>
+													</div>
+												</div>
+											</dd>
+										</dl>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="row gloss-row hidden" data-part="0" data-pick="1">
+				<ul class="large-block-grid-4 small-block-grid-1 medium-block-grid-3">
+					<li>
+						<div class="gloss" id="g-0-1-0" data-word="0"
+							data-word-json="{&quot;type&quot;:&quot;KANJI&quot;,&quot;text&quot;:&quot;\\u79C1&quot;,&quot;truetext&quot;:&quot;\\u79C1&quot;,&quot;kana&quot;:&quot;\\u308F\\u305F\\u3057&quot;,&quot;seq&quot;:1311110,&quot;conjugations&quot;:[],&quot;score&quot;:25,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:0,&quot;end&quot;:1,&quot;counter&quot;:[],&quot;skipped&quot;:9}"
+							data-load-me="1">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E7%A7%81"> <em>watashi</em> </a>
+								<div class="word-link-container"> <a class="wiktionary-link" title="Look up this kanji in Wiktionary"
+										target="_blank" href="https://en.wiktionary.org/wiki/%E7%A7%81#Kanji"> W </a> </div>
+							</div>
+							<div class="gloss-content scroll-pane"> <span class="note-skipped"> <a href="/cl/word/?q=%E7%A7%81"
+										target="_blank">omitted: 9</a> </span> </div>
+						</div>
+					</li>
+					<li>
+						<div class="gloss" id="g-0-1-1" data-word="1"
+							data-word-json="{&quot;type&quot;:&quot;KANA&quot;,&quot;text&quot;:&quot;\\u306F&quot;,&quot;truetext&quot;:&quot;\\u306F&quot;,&quot;kana&quot;:&quot;\\u200C\\u306F&quot;,&quot;seq&quot;:2028920,&quot;conjugations&quot;:[],&quot;score&quot;:11,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:1,&quot;end&quot;:2,&quot;counter&quot;:[],&quot;skipped&quot;:10}"
+							data-load-me="1">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E3%81%AF"> <em>wa</em> </a> </div>
+							<div class="gloss-content scroll-pane"> <span class="note-skipped"> <a href="/cl/word/?q=%E3%81%AF"
+										target="_blank">omitted: 10</a> </span> </div>
+						</div>
+					</li>
+					<li>
+						<div class="gloss" id="g-0-1-2" data-word="2"
+							data-word-json="{&quot;type&quot;:&quot;KANJI&quot;,&quot;text&quot;:&quot;\\u65E5\\u672C\\u8A9E&quot;,&quot;truetext&quot;:&quot;\\u65E5\\u672C\\u8A9E&quot;,&quot;kana&quot;:&quot;\\u306B\\u307B\\u3093\\u3054&quot;,&quot;seq&quot;:1464530,&quot;conjugations&quot;:[],&quot;score&quot;:1054,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:2,&quot;end&quot;:5,&quot;counter&quot;:[],&quot;skipped&quot;:0}"
+							data-load-me="1">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E6%97%A5%E6%9C%AC%E8%AA%9E"> <em>nihongo</em> </a> </div>
+							<div class="gloss-content scroll-pane"> </div>
+						</div>
+					</li>
+					<li>
+						<div class="gloss" id="g-0-1-3" data-word="3"
+							data-word-json="{&quot;type&quot;:&quot;KANA&quot;,&quot;text&quot;:&quot;\\u3092&quot;,&quot;truetext&quot;:&quot;\\u3092&quot;,&quot;kana&quot;:&quot;\\u3092&quot;,&quot;seq&quot;:2029010,&quot;conjugations&quot;:[],&quot;score&quot;:11,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:5,&quot;end&quot;:6,&quot;counter&quot;:[],&quot;skipped&quot;:0}"
+							data-load-me="1">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E3%82%92"> <em>wo</em> </a> </div>
+							<div class="gloss-content scroll-pane"> </div>
+						</div>
+					</li>
+					<li>
+						<div class="gloss" id="g-0-1-4" data-word="4"
+							data-word-json="{&quot;type&quot;:&quot;KANJI&quot;,&quot;text&quot;:&quot;\\u52C9\\u5F37\\u3057\\u3066\\u3044\\u307E\\u3059&quot;,&quot;truetext&quot;:[],&quot;kana&quot;:&quot;\\u3079\\u3093\\u304D\\u3087\\u3046 \\u3057\\u3066\\u3044\\u307E\\u3059&quot;,&quot;seq&quot;:[1512670,10285148,10410044],&quot;conjugations&quot;:[],&quot;score&quot;:2254,&quot;components&quot;:[{&quot;type&quot;:&quot;KANJI&quot;,&quot;text&quot;:&quot;\\u52C9\\u5F37&quot;,&quot;truetext&quot;:&quot;\\u52C9\\u5F37&quot;,&quot;kana&quot;:&quot;\\u3079\\u3093\\u304D\\u3087\\u3046&quot;,&quot;seq&quot;:1512670,&quot;conjugations&quot;:[],&quot;score&quot;:0,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:[],&quot;end&quot;:[],&quot;counter&quot;:[],&quot;skipped&quot;:0},{&quot;type&quot;:&quot;KANA&quot;,&quot;text&quot;:&quot;\\u3057\\u3066&quot;,&quot;truetext&quot;:&quot;\\u3057\\u3066&quot;,&quot;kana&quot;:&quot;\\u3057\\u3066&quot;,&quot;seq&quot;:10285148,&quot;conjugations&quot;:[287394],&quot;score&quot;:0,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:[],&quot;start&quot;:[],&quot;end&quot;:[],&quot;counter&quot;:[],&quot;skipped&quot;:0},{&quot;type&quot;:&quot;KANA&quot;,&quot;text&quot;:&quot;\\u3044\\u307E\\u3059&quot;,&quot;truetext&quot;:&quot;\\u3044\\u307E\\u3059&quot;,&quot;kana&quot;:&quot;\\u3044\\u307E\\u3059&quot;,&quot;seq&quot;:10410044,&quot;conjugations&quot;:[414237],&quot;score&quot;:0,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:[],&quot;start&quot;:[],&quot;end&quot;:[],&quot;counter&quot;:[],&quot;skipped&quot;:0}],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:6,&quot;end&quot;:13,&quot;counter&quot;:[],&quot;skipped&quot;:0}"
+							data-load-me="1">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E5%8B%89%E5%BC%B7%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99"> <em>benky\xc5\x8d
+										shiteimasu</em> </a> </div>
+							<div class="gloss-content scroll-pane"> </div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="row gloss-row hidden" data-part="0" data-pick="2">
+				<ul class="large-block-grid-4 small-block-grid-1 medium-block-grid-3">
+					<li>
+						<div class="gloss" id="g-0-2-0" data-word="0"
+							data-word-json="{&quot;type&quot;:&quot;KANJI&quot;,&quot;text&quot;:&quot;\\u79C1&quot;,&quot;truetext&quot;:&quot;\\u79C1&quot;,&quot;kana&quot;:&quot;\\u308F\\u305F\\u3057&quot;,&quot;seq&quot;:1311110,&quot;conjugations&quot;:[],&quot;score&quot;:25,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:0,&quot;end&quot;:1,&quot;counter&quot;:[],&quot;skipped&quot;:9}"
+							data-load-me="1">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E7%A7%81"> <em>watashi</em> </a>
+								<div class="word-link-container"> <a class="wiktionary-link" title="Look up this kanji in Wiktionary"
+										target="_blank" href="https://en.wiktionary.org/wiki/%E7%A7%81#Kanji"> W </a> </div>
+							</div>
+							<div class="gloss-content scroll-pane"> <span class="note-skipped"> <a href="/cl/word/?q=%E7%A7%81"
+										target="_blank">omitted: 9</a> </span> </div>
+						</div>
+					</li>
+					<li>
+						<div class="gloss" id="g-0-2-1" data-word="1"
+							data-word-json="{&quot;type&quot;:&quot;KANA&quot;,&quot;text&quot;:&quot;\\u306F&quot;,&quot;truetext&quot;:&quot;\\u306F&quot;,&quot;kana&quot;:&quot;\\u200C\\u306F&quot;,&quot;seq&quot;:2028920,&quot;conjugations&quot;:[],&quot;score&quot;:11,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:1,&quot;end&quot;:2,&quot;counter&quot;:[],&quot;skipped&quot;:10}"
+							data-load-me="1">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E3%81%AF"> <em>wa</em> </a> </div>
+							<div class="gloss-content scroll-pane"> <span class="note-skipped"> <a href="/cl/word/?q=%E3%81%AF"
+										target="_blank">omitted: 10</a> </span> </div>
+						</div>
+					</li>
+					<li>
+						<div class="gloss" id="g-0-2-2" data-word="2"
+							data-word-json="{&quot;type&quot;:&quot;KANJI&quot;,&quot;text&quot;:&quot;\\u65E5\\u672C\\u8A9E&quot;,&quot;truetext&quot;:&quot;\\u65E5\\u672C\\u8A9E&quot;,&quot;kana&quot;:&quot;\\u306B\\u307B\\u3093\\u3054&quot;,&quot;seq&quot;:1464530,&quot;conjugations&quot;:[],&quot;score&quot;:1054,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:2,&quot;end&quot;:5,&quot;counter&quot;:[],&quot;skipped&quot;:0}"
+							data-load-me="1">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E6%97%A5%E6%9C%AC%E8%AA%9E"> <em>nihongo</em> </a> </div>
+							<div class="gloss-content scroll-pane"> </div>
+						</div>
+					</li>
+					<li>
+						<div class="gloss" id="g-0-2-3" data-word="3"
+							data-word-json="{&quot;type&quot;:&quot;KANA&quot;,&quot;text&quot;:&quot;\\u3092&quot;,&quot;truetext&quot;:&quot;\\u3092&quot;,&quot;kana&quot;:&quot;\\u3092&quot;,&quot;seq&quot;:2029010,&quot;conjugations&quot;:[],&quot;score&quot;:11,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:5,&quot;end&quot;:6,&quot;counter&quot;:[],&quot;skipped&quot;:0}"
+							data-load-me="1">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E3%82%92"> <em>wo</em> </a> </div>
+							<div class="gloss-content scroll-pane"> </div>
+						</div>
+					</li>
+					<li>
+						<div class="gloss" id="g-0-2-4" data-word="4"
+							data-word-json="{&quot;type&quot;:&quot;KANJI&quot;,&quot;text&quot;:&quot;\\u52C9\\u5F37\\u3057\\u3066\\u3044\\u307E\\u3059&quot;,&quot;truetext&quot;:[],&quot;kana&quot;:&quot;\\u3079\\u3093\\u304D\\u3087\\u3046 \\u3057\\u3066\\u3044\\u307E\\u3059&quot;,&quot;seq&quot;:[1512670,10285148,10410044],&quot;conjugations&quot;:[],&quot;score&quot;:2254,&quot;components&quot;:[{&quot;type&quot;:&quot;KANJI&quot;,&quot;text&quot;:&quot;\\u52C9\\u5F37&quot;,&quot;truetext&quot;:&quot;\\u52C9\\u5F37&quot;,&quot;kana&quot;:&quot;\\u3079\\u3093\\u304D\\u3087\\u3046&quot;,&quot;seq&quot;:1512670,&quot;conjugations&quot;:[],&quot;score&quot;:0,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:[],&quot;end&quot;:[],&quot;counter&quot;:[],&quot;skipped&quot;:0},{&quot;type&quot;:&quot;KANA&quot;,&quot;text&quot;:&quot;\\u3057\\u3066&quot;,&quot;truetext&quot;:&quot;\\u3057\\u3066&quot;,&quot;kana&quot;:&quot;\\u3057\\u3066&quot;,&quot;seq&quot;:10285148,&quot;conjugations&quot;:[287394],&quot;score&quot;:0,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:[],&quot;start&quot;:[],&quot;end&quot;:[],&quot;counter&quot;:[],&quot;skipped&quot;:0},{&quot;type&quot;:&quot;KANA&quot;,&quot;text&quot;:&quot;\\u3044\\u307E\\u3059&quot;,&quot;truetext&quot;:&quot;\\u3044\\u307E\\u3059&quot;,&quot;kana&quot;:&quot;\\u3044\\u307E\\u3059&quot;,&quot;seq&quot;:10410044,&quot;conjugations&quot;:[414237],&quot;score&quot;:0,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:[],&quot;start&quot;:[],&quot;end&quot;:[],&quot;counter&quot;:[],&quot;skipped&quot;:0}],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:6,&quot;end&quot;:13,&quot;counter&quot;:[],&quot;skipped&quot;:0}"
+							data-load-me="1">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E5%8B%89%E5%BC%B7%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99"> <em>benky\xc5\x8d
+										shiteimasu</em> </a> </div>
+							<div class="gloss-content scroll-pane"> </div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="row gloss-row hidden" data-part="0" data-pick="3">
+				<ul class="large-block-grid-4 small-block-grid-1 medium-block-grid-3">
+					<li>
+						<div class="gloss" id="g-0-3-0" data-word="0"
+							data-word-json="{&quot;type&quot;:&quot;KANJI&quot;,&quot;text&quot;:&quot;\\u79C1&quot;,&quot;truetext&quot;:&quot;\\u79C1&quot;,&quot;kana&quot;:&quot;\\u308F\\u305F\\u3057&quot;,&quot;seq&quot;:1311110,&quot;conjugations&quot;:[],&quot;score&quot;:25,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:0,&quot;end&quot;:1,&quot;counter&quot;:[],&quot;skipped&quot;:9}"
+							data-load-me="1">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E7%A7%81"> <em>watashi</em> </a>
+								<div class="word-link-container"> <a class="wiktionary-link" title="Look up this kanji in Wiktionary"
+										target="_blank" href="https://en.wiktionary.org/wiki/%E7%A7%81#Kanji"> W </a> </div>
+							</div>
+							<div class="gloss-content scroll-pane"> <span class="note-skipped"> <a href="/cl/word/?q=%E7%A7%81"
+										target="_blank">omitted: 9</a> </span> </div>
+						</div>
+					</li>
+					<li>
+						<div class="gloss" id="g-0-3-1" data-word="1"
+							data-word-json="{&quot;type&quot;:&quot;KANA&quot;,&quot;text&quot;:&quot;\\u306F&quot;,&quot;truetext&quot;:&quot;\\u306F&quot;,&quot;kana&quot;:&quot;\\u200C\\u306F&quot;,&quot;seq&quot;:2028920,&quot;conjugations&quot;:[],&quot;score&quot;:11,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:1,&quot;end&quot;:2,&quot;counter&quot;:[],&quot;skipped&quot;:10}"
+							data-load-me="1">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E3%81%AF"> <em>wa</em> </a> </div>
+							<div class="gloss-content scroll-pane"> <span class="note-skipped"> <a href="/cl/word/?q=%E3%81%AF"
+										target="_blank">omitted: 10</a> </span> </div>
+						</div>
+					</li>
+					<li>
+						<div class="gloss" id="g-0-3-2" data-word="2"
+							data-word-json="{&quot;type&quot;:&quot;KANJI&quot;,&quot;text&quot;:&quot;\\u65E5\\u672C\\u8A9E&quot;,&quot;truetext&quot;:&quot;\\u65E5\\u672C\\u8A9E&quot;,&quot;kana&quot;:&quot;\\u306B\\u307B\\u3093\\u3054&quot;,&quot;seq&quot;:1464530,&quot;conjugations&quot;:[],&quot;score&quot;:1054,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:2,&quot;end&quot;:5,&quot;counter&quot;:[],&quot;skipped&quot;:0}"
+							data-load-me="1">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E6%97%A5%E6%9C%AC%E8%AA%9E"> <em>nihongo</em> </a> </div>
+							<div class="gloss-content scroll-pane"> </div>
+						</div>
+					</li>
+					<li>
+						<div class="gloss" id="g-0-3-3" data-word="3"
+							data-word-json="{&quot;type&quot;:&quot;KANA&quot;,&quot;text&quot;:&quot;\\u3092&quot;,&quot;truetext&quot;:&quot;\\u3092&quot;,&quot;kana&quot;:&quot;\\u3092&quot;,&quot;seq&quot;:2029010,&quot;conjugations&quot;:[],&quot;score&quot;:11,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:5,&quot;end&quot;:6,&quot;counter&quot;:[],&quot;skipped&quot;:0}"
+							data-load-me="1">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E3%82%92"> <em>wo</em> </a> </div>
+							<div class="gloss-content scroll-pane"> </div>
+						</div>
+					</li>
+					<li>
+						<div class="gloss" id="g-0-3-4" data-word="4"
+							data-word-json="{&quot;type&quot;:&quot;KANJI&quot;,&quot;text&quot;:&quot;\\u52C9\\u5F37\\u3057\\u3066\\u3044\\u307E\\u3059&quot;,&quot;truetext&quot;:[],&quot;kana&quot;:&quot;\\u3079\\u3093\\u304D\\u3087\\u3046 \\u3057\\u3066\\u3044\\u307E\\u3059&quot;,&quot;seq&quot;:[1512670,10285148,10410044],&quot;conjugations&quot;:[],&quot;score&quot;:2254,&quot;components&quot;:[{&quot;type&quot;:&quot;KANJI&quot;,&quot;text&quot;:&quot;\\u52C9\\u5F37&quot;,&quot;truetext&quot;:&quot;\\u52C9\\u5F37&quot;,&quot;kana&quot;:&quot;\\u3079\\u3093\\u304D\\u3087\\u3046&quot;,&quot;seq&quot;:1512670,&quot;conjugations&quot;:[],&quot;score&quot;:0,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:[],&quot;end&quot;:[],&quot;counter&quot;:[],&quot;skipped&quot;:0},{&quot;type&quot;:&quot;KANA&quot;,&quot;text&quot;:&quot;\\u3057\\u3066&quot;,&quot;truetext&quot;:&quot;\\u3057\\u3066&quot;,&quot;kana&quot;:&quot;\\u3057\\u3066&quot;,&quot;seq&quot;:10285148,&quot;conjugations&quot;:[287394],&quot;score&quot;:0,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:[],&quot;start&quot;:[],&quot;end&quot;:[],&quot;counter&quot;:[],&quot;skipped&quot;:0},{&quot;type&quot;:&quot;KANA&quot;,&quot;text&quot;:&quot;\\u3044\\u307E\\u3059&quot;,&quot;truetext&quot;:&quot;\\u3044\\u307E\\u3059&quot;,&quot;kana&quot;:&quot;\\u3044\\u307E\\u3059&quot;,&quot;seq&quot;:10410044,&quot;conjugations&quot;:[414237],&quot;score&quot;:0,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:[],&quot;start&quot;:[],&quot;end&quot;:[],&quot;counter&quot;:[],&quot;skipped&quot;:0}],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:6,&quot;end&quot;:13,&quot;counter&quot;:[],&quot;skipped&quot;:0}"
+							data-load-me="1">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E5%8B%89%E5%BC%B7%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99"> <em>benky\xc5\x8d
+										shiteimasu</em> </a> </div>
+							<div class="gloss-content scroll-pane"> </div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="row gloss-row hidden" data-part="0" data-pick="4">
+				<ul class="large-block-grid-4 small-block-grid-1 medium-block-grid-3">
+					<li>
+						<div class="gloss" id="g-0-4-0" data-word="0"
+							data-word-json="{&quot;type&quot;:&quot;KANJI&quot;,&quot;text&quot;:&quot;\\u79C1&quot;,&quot;truetext&quot;:&quot;\\u79C1&quot;,&quot;kana&quot;:&quot;\\u308F\\u305F\\u3057&quot;,&quot;seq&quot;:1311110,&quot;conjugations&quot;:[],&quot;score&quot;:25,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:0,&quot;end&quot;:1,&quot;counter&quot;:[],&quot;skipped&quot;:9}"
+							data-load-me="1">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E7%A7%81"> <em>watashi</em> </a>
+								<div class="word-link-container"> <a class="wiktionary-link" title="Look up this kanji in Wiktionary"
+										target="_blank" href="https://en.wiktionary.org/wiki/%E7%A7%81#Kanji"> W </a> </div>
+							</div>
+							<div class="gloss-content scroll-pane"> <span class="note-skipped"> <a href="/cl/word/?q=%E7%A7%81"
+										target="_blank">omitted: 9</a> </span> </div>
+						</div>
+					</li>
+					<li>
+						<div class="gloss" id="g-0-4-1" data-word="1"
+							data-word-json="{&quot;type&quot;:&quot;KANA&quot;,&quot;text&quot;:&quot;\\u306F&quot;,&quot;truetext&quot;:&quot;\\u306F&quot;,&quot;kana&quot;:&quot;\\u200C\\u306F&quot;,&quot;seq&quot;:2028920,&quot;conjugations&quot;:[],&quot;score&quot;:11,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:1,&quot;end&quot;:2,&quot;counter&quot;:[],&quot;skipped&quot;:10}"
+							data-load-me="1">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E3%81%AF"> <em>wa</em> </a> </div>
+							<div class="gloss-content scroll-pane"> <span class="note-skipped"> <a href="/cl/word/?q=%E3%81%AF"
+										target="_blank">omitted: 10</a> </span> </div>
+						</div>
+					</li>
+					<li>
+						<div class="gloss" id="g-0-4-2" data-word="2"
+							data-word-json="{&quot;type&quot;:&quot;KANJI&quot;,&quot;text&quot;:&quot;\\u65E5\\u672C\\u8A9E&quot;,&quot;truetext&quot;:&quot;\\u65E5\\u672C\\u8A9E&quot;,&quot;kana&quot;:&quot;\\u306B\\u307B\\u3093\\u3054&quot;,&quot;seq&quot;:1464530,&quot;conjugations&quot;:[],&quot;score&quot;:1054,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:2,&quot;end&quot;:5,&quot;counter&quot;:[],&quot;skipped&quot;:0}"
+							data-load-me="1">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E6%97%A5%E6%9C%AC%E8%AA%9E"> <em>nihongo</em> </a> </div>
+							<div class="gloss-content scroll-pane"> </div>
+						</div>
+					</li>
+					<li>
+						<div class="gloss" id="g-0-4-3" data-word="3"
+							data-word-json="{&quot;type&quot;:&quot;GAP&quot;,&quot;text&quot;:&quot;\\u3092&quot;,&quot;truetext&quot;:[],&quot;kana&quot;:&quot;\\u3092&quot;,&quot;seq&quot;:[],&quot;conjugations&quot;:[],&quot;score&quot;:0,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:5,&quot;end&quot;:6,&quot;counter&quot;:[],&quot;skipped&quot;:0}"
+							data-load-me="1">
+							<div class="gloss-rtext"> <em>wo</em> </div>
+							<div class="gloss-content scroll-pane"> </div>
+						</div>
+					</li>
+					<li>
+						<div class="gloss" id="g-0-4-4" data-word="4"
+							data-word-json="{&quot;type&quot;:&quot;KANJI&quot;,&quot;text&quot;:&quot;\\u52C9\\u5F37\\u3057\\u3066\\u3044\\u307E\\u3059&quot;,&quot;truetext&quot;:[],&quot;kana&quot;:&quot;\\u3079\\u3093\\u304D\\u3087\\u3046 \\u3057\\u3066\\u3044\\u307E\\u3059&quot;,&quot;seq&quot;:[1512670,10285148,10410044],&quot;conjugations&quot;:[],&quot;score&quot;:2254,&quot;components&quot;:[{&quot;type&quot;:&quot;KANJI&quot;,&quot;text&quot;:&quot;\\u52C9\\u5F37&quot;,&quot;truetext&quot;:&quot;\\u52C9\\u5F37&quot;,&quot;kana&quot;:&quot;\\u3079\\u3093\\u304D\\u3087\\u3046&quot;,&quot;seq&quot;:1512670,&quot;conjugations&quot;:[],&quot;score&quot;:0,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:[],&quot;end&quot;:[],&quot;counter&quot;:[],&quot;skipped&quot;:0},{&quot;type&quot;:&quot;KANA&quot;,&quot;text&quot;:&quot;\\u3057\\u3066&quot;,&quot;truetext&quot;:&quot;\\u3057\\u3066&quot;,&quot;kana&quot;:&quot;\\u3057\\u3066&quot;,&quot;seq&quot;:10285148,&quot;conjugations&quot;:[287394],&quot;score&quot;:0,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:[],&quot;start&quot;:[],&quot;end&quot;:[],&quot;counter&quot;:[],&quot;skipped&quot;:0},{&quot;type&quot;:&quot;KANA&quot;,&quot;text&quot;:&quot;\\u3044\\u307E\\u3059&quot;,&quot;truetext&quot;:&quot;\\u3044\\u307E\\u3059&quot;,&quot;kana&quot;:&quot;\\u3044\\u307E\\u3059&quot;,&quot;seq&quot;:10410044,&quot;conjugations&quot;:[414237],&quot;score&quot;:0,&quot;components&quot;:[],&quot;alternative&quot;:[],&quot;primary&quot;:[],&quot;start&quot;:[],&quot;end&quot;:[],&quot;counter&quot;:[],&quot;skipped&quot;:0}],&quot;alternative&quot;:[],&quot;primary&quot;:true,&quot;start&quot;:6,&quot;end&quot;:13,&quot;counter&quot;:[],&quot;skipped&quot;:0}"
+							data-load-me="1">
+							<div class="gloss-rtext"> <a class="info-link" title="More info about this word" target="_blank"
+									href="/cl/word/?q=%E5%8B%89%E5%BC%B7%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99"> <em>benky\xc5\x8d
+										shiteimasu</em> </a> </div>
+							<div class="gloss-content scroll-pane"> </div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="donate text-center"> <a href="https://u24.gov.ua/">\xf0\x9f\x87\xba\xf0\x9f\x87\xa6 Support Ukraine!
+					\xf0\x9f\x87\xba\xf0\x9f\x87\xa6</a> </div>
+		</div>
+	</div>
+	<footer>
+		<div class="row"> <span class="footer-text"> <span class="nowrap">&copy; 2014-2023 <a
+						href="https://github.com/tshatrov/ichiran">Ichiran Production Committee</a>.</span> <span
+					class="nowrap">Dictionary definitions courtesy of <a href="http://www.edrdg.org/jmdict/j_jmdict.html">JMDict
+						Project</a>.</span> </span> <br> <span class="footer-debug"> <span class="nowrap">Last updated: 2023-03-17
+					23:15:48</span> </span> </div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write(\'<script src="/js/vendor/jquery-1.10.2.min.js"><\\/script>\')</script>
+	<script src="/js/jquery.mousewheel.js"></script>
+	<script src="/js/mwheelIntent.js"></script>
+	<script src="/js/jquery.jscrollpane.min.js"></script>
+	<script src="/js/plugins.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.6/js/foundation.min.js"></script>
+	<script>window.Foundation || document.write(\'<script src="/js/foundation.min.js"><\\/script>\')</script>
+	<script> $(document).foundation(); </script>
+	<script src="/js/jquery.cookie.js"></script>
+	<script src="/js/jquery.autocomplete.js?v=3850663369"></script>
+	<script src="/js/const.js?v=3850663369"></script>
+	<script src="/js/dict.js?v=3850663369"></script>
+	<script src="/js/ichiran.js?v=3850663369"></script> \n
+	<script>\n(function (i, s, o, g, r, a, m) { i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){\n          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n         })(window,document,\'script\',\'//www.google-analytics.com/analytics.js\',\'ga\');\n         ga(\'create\', \'UA-56061796-1\', \'auto\');\n         ga(\'send\', \'pageview\');\n        </script>
+	\n
+</body>\n
+
+</html>\n'
+[<span class="gloss-desc">I; me</span>, <span class="gloss-desc">indicates sentence topic</span>, <span
+	class="gloss-desc">indicates contrast with another option (stated or unstated)</span>, <span class="gloss-desc">adds
+	emphasis</span>, <span class="gloss-desc">Japanese (language)</span>, <span class="gloss-desc">indicates direct object
+	of action</span>, <span class="gloss-desc">indicates subject of causative expression</span>, <span
+	class="gloss-desc">indicates an area traversed</span>, <span class="gloss-desc">indicates time (period) over which
+	action takes place</span>, <span class="gloss-desc">indicates point of departure or separation of action</span>, <span
+	class="gloss-desc">indicates object of desire, like, hate, etc.</span>, <span class="gloss-desc">study</span>, <span
+	class="gloss-desc">diligence; working hard</span>, <span class="gloss-desc">experience; lesson (for the
+	future)</span>, <span class="gloss-desc">discount; price reduction</span>
