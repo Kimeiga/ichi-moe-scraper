@@ -1,8 +1,25 @@
 import requests
 from bs4 import BeautifulSoup
 
+import random
+import string
+
+
+def random_alphanumeric_string(length=4):
+    characters = string.ascii_letters + string.digits
+    return ''.join(random.choice(characters) for _ in range(length))
+
+
+def get_random_sentence():
+    # get random sentence from Tatoeba
+    response = requests.get(
+        f'https://tatoeba.elnu.com/?from=jpn&orphans=no&sort=random&to=eng&trans_filter=limit&trans_to=eng&unapproved=no&limit=1&rand_seed={random_alphanumeric_string()}')
+
+    print(response.content.transcriptions[0].text)
+
 
 def define_words(sentence):
+
     # send GET request to ichi.moe website
     response = requests.get(f'https://ichi.moe/cl/qr/?q={sentence}')
 
@@ -49,4 +66,6 @@ def define_words(sentence):
 
 
 # print(define_words('私は日本語を勉強しています。'))
-print(define_words('いつ日本に行くべきかは、あなたが何を楽しみにしているかによります'))
+# print(define_words('いつ日本に行くべきかは、あなたが何を楽しみにしているかによります'))
+# print(define_words('いつ日本に行くべきかは、あなたが何を楽しみにしているかによります'))
+get_random_sentence()
